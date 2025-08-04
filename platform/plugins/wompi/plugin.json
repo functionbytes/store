@@ -1,0 +1,12 @@
+{
+    "id": "functionbytes/wompi",
+    "name": "Wompi Payment Gateway",
+    "namespace": "Functionbytes\\Wompi\\",
+    "provider": "Functionbytes\\Wompi\\Providers\\WompiServiceProvider",
+    "author": "Functionbytes",
+    "url": "https://functionbytes.com",
+    "version": "1.1.1",
+    "description": "Wompi payment gateway integration",
+    "minimum_core_version": "7.3.0",
+    "require": ["botble/payment"]
+}

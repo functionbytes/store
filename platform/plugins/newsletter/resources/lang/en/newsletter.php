@@ -1,0 +1,67 @@
+<?php
+
+return [
+    'name' => 'Newsletters',
+    'newsletter_form' => 'Newsletters form',
+    'description' => 'View and delete newsletter subscribers',
+    'settings' => [
+        'email' => [
+            'templates' => [
+                'title' => 'Newsletter',
+                'description' => 'Config newsletter email templates',
+                'to_admin' => [
+                    'title' => 'Email send to admin',
+                    'description' => 'Template for sending email to admin',
+                    'subject' => 'New user subscribed your newsletter',
+                    'newsletter_email' => 'Email of user who subscribe newsletter',
+                ],
+                'to_user' => [
+                    'title' => 'Email send to user',
+                    'description' => 'Template for sending email to subscriber',
+                    'subject' => '{{ site_title }}: Subscription Confirmed!',
+                    'newsletter_name' => 'Full name of user who subscribe newsletter',
+                    'newsletter_email' => 'Email of user who subscribe newsletter',
+                    'newsletter_unsubscribe_link' => 'Link for unsubscribe newsletter',
+                    'newsletter_unsubscribe_url' => 'URL for unsubscribe newsletter',
+                ],
+            ],
+        ],
+        'title' => 'Newsletter',
+        'panel_description' => 'View and update newsletter settings',
+        'description' => 'Settings for newsletter (auto send newsletter email to SendGrid, mailjet... when someone register newsletter on website).',
+        'mailjet_api_key' => 'Mailjet API Key',
+        'mailjet_list_id' => 'Mailjet List ID',
+        'mailjet_list' => 'Mailjet List',
+        'sendgrid_api_key' => 'Sendgrid API Key',
+        'sendgrid_list_id' => 'Sendgrid List ID',
+        'sendgrid_list' => 'Sendgrid List',
+        'enable_newsletter_contacts_list_api' => 'Enable newsletter contacts list API?',
+        'enable_popup' => 'Enable newsletter popup',
+        'popup_title' => 'Popup title',
+        'popup_subtitle' => 'Popup subtitle',
+        'popup_description' => 'Popup description',
+        'popup_delay' => 'Popup delay (seconds)',
+        'popup_delay_help' => 'Set the delay time to show the popup after the page is loaded. Set 0 to show the popup immediately.',
+        'popup_display_pages' => 'Display on pages',
+        'display_pages' => [
+            'homepage' => 'Homepage',
+            'all' => 'All Pages',
+        ],
+    ],
+    'statuses' => [
+        'subscribed' => 'Subscribed',
+        'unsubscribed' => 'Unsubscribed',
+    ],
+    'popup' => [
+        'title' => 'Subscribe to our Newsletter!',
+        'subtitle' => 'Get the latest news and special offers',
+        'description' => 'Stay informed with our latest updates, exclusive promotions and valuable content directly in your inbox.',
+        'email_placeholder' => 'Enter Your Email',
+        'email_label' => 'Email Address',
+        'subscribe_button' => 'Subscribe',
+        'dont_show_again' => "Don't show this popup again",
+        'already_subscribed' => 'You are already subscribed to our newsletter.',
+        'subscribe_success' => 'Subscribe to newsletter successfully!',
+        'subscribe_error' => 'Error subscribing. Please try again.',
+    ],
+];
